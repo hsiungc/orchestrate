@@ -1,2 +1,2 @@
-# orchestrate
-Team Orchestrate Capstone Project (Fall 2023)
+# Orchestrate
+Capstone Project (Fall 2023)
