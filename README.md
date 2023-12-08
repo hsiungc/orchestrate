@@ -2,6 +2,11 @@
 
 ### Andy Fiegleman, Casey Hsiung, Dakota Postere-Ramos, James Meyer, Ken Trinh
 
+<br>
+[Website](https://orchestratemusic.com/)
+[Demo](https://orchestrate.vercel.app/)
+
+
 Individuals aspiring to create music face the challenge of either mastering multiple instruments required for their compositions or relying on digital tools for music production. Orchestrate harnesses the power of machine learning and natural language processing (NLP) to develop a prompt-responsive music generation model. This innovative platform empowers users to select and layer diverse instruments, crafting personalized arrangements that can be utilized for jamming, sparking musical inspiration, or simply enjoying music in its own right.
 
 
