@@ -41,7 +41,7 @@ npm run start
 pip install -r requirements.txt
 flask run
 ```
-4. We recommend using a simple tool such as [Postman](https://web.postman.co/) to send POST requests to the Orchestrate server.
+4. We recommend using a simple tool such as [Postman](https://web.postman.co/) to send POST requests to the Orchestrate server at http://localhost:5000/api/generate.
 
 <br>
 
