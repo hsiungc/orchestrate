@@ -1,4 +1,6 @@
-![](https://github.com/hsiungc/orchestrate/blob/main/orchestrate-logo.png)
+<img src='https://github.com/hsiungc/orchestrate/blob/main/orchestrate-logo.png' width="492" height="288">
+
+<br>
 
 # Orchestrate - Capstone Project (Fall 2023)
 
