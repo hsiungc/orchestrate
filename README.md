@@ -1,4 +1,4 @@
-![]()
+![](https://github.com/hsiungc/orchestrate/blob/main/orchestrate-logo.png)
 
 # Orchestrate - Capstone Project (Fall 2023)
 
