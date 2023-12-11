@@ -1,6 +1,4 @@
-<img src='https://github.com/hsiungc/orchestrate/blob/main/orchestrate-logo.png' width="492" height="288">
-
-<br>
+<img src='https://github.com/hsiungc/orchestrate/blob/main/orchestrate-logo.png' width="492" height="288" alignment="center">
 
 # Orchestrate - Capstone Project (Fall 2023)
 
