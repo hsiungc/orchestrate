@@ -163,7 +163,7 @@ cython_debug/
 data/
 dataset/
 *.mid
-*.png
+# *.png
 *.jpg
 *.pkl
 

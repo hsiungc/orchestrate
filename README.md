@@ -1,3 +1,5 @@
+![]()
+
 # Orchestrate - Capstone Project (Fall 2023)
 
 ## Public-Facing GitHub Repository
@@ -11,10 +13,11 @@
 
 Individuals aspiring to create music face the challenge of either mastering multiple instruments required for their compositions or relying on digital tools for music production. Orchestrate harnesses the power of machine learning and natural language processing (NLP) to develop a prompt-responsive music generation product. This innovative platform empowers users to create and layer diverse music pieces, crafting personalized arrangements that can be utilized for jamming, sparking musical inspiration, or simply enjoying music in its own right.
 
+<br>
 
 ### Setup Instructions
 
-To run the server and client locally, follow the below steps:
+To run the server and client locally, follow the below steps. An OpenAI key (```OPENAI_API_KEY```) is required to use ChatGPT.
 
 #### Orchestrate Client
 
@@ -47,7 +50,6 @@ flask run
 [Hyun, L., Kim, T., Kang, H., Ki, M., Hwang, H., Park, K., ... & Kim, S. J. (2022). ComMU: Dataset for Combinatorial Music Generation. arXiv preprint arXiv:2211.09385.](https://arxiv.org/pdf/2211.09385.pdf)
 
 [Ens, J., & Pasquier, P. (n.d.). Building the MetaMIDI dataset: Linking Symbolic and Audio Musical Data. Proceedings of the 22nd ISMIR Conference. https://archives.ismir.net/ismir2021/paper/000022.pdf](https://archives.ismir.net/ismir2021/paper/000022.pdf)
-
 
 <br>
 
