@@ -17,7 +17,10 @@ Individuals aspiring to create music face the challenge of either mastering mult
 
 ### Setup Instructions
 
-To run the server and client locally, follow the below steps. An OpenAI key (```OPENAI_API_KEY```) is required to use ChatGPT.
+To run the server and client locally, follow the below steps. 
+
+#### API Key Information
+Setting the following keys is encouraged for a seamless experience. An OpenAI key (```OPENAI_API_KEY```) is required to use ChatGPT. Setting a HuggingFace key (```HUGGINGFACE_API_KEY```) is optional but useful to avoid rate limiting. The production deployment of Orchestrate calls model files from an S3 bucket. The localized version here makes calls to files stored in this repository.
 
 #### Orchestrate Client
 
