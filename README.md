@@ -1,5 +1,7 @@
 # Orchestrate - Capstone Project (Fall 2023)
 
+## Public-Facing GitHub Repository
+
 ### Andy Fiegleman, Casey Hsiung, Dakota Postere-Ramos, James Meyer, Ken Trinh
 
 <br>
@@ -7,8 +9,36 @@
 [Website](https://orchestratemusic.com/) | [Demo](https://orchestrate.vercel.app/)
 
 
-Individuals aspiring to create music face the challenge of either mastering multiple instruments required for their compositions or relying on digital tools for music production. Orchestrate harnesses the power of machine learning and natural language processing (NLP) to develop a prompt-responsive music generation model. This innovative platform empowers users to select and layer diverse instruments, crafting personalized arrangements that can be utilized for jamming, sparking musical inspiration, or simply enjoying music in its own right.
+Individuals aspiring to create music face the challenge of either mastering multiple instruments required for their compositions or relying on digital tools for music production. Orchestrate harnesses the power of machine learning and natural language processing (NLP) to develop a prompt-responsive music generation product. This innovative platform empowers users to create and layer diverse music pieces, crafting personalized arrangements that can be utilized for jamming, sparking musical inspiration, or simply enjoying music in its own right.
 
+
+### Setup Instructions
+
+To run the server and client locally, follow the below steps:
+
+#### Orchestrate Client
+
+1. Install Node.js and npm from [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+2. Navigate to the ```orchestrate-client``` directory.
+3. Run the following commands:
+```
+npm install
+npm run start
+```
+4. A browser should open at the http://localhost:3000 address.
+5. Following the frontend instructions will allow you to play and download a music file by submitting a text prompt.
+
+
+#### Orchestrate Server
+
+1. Install Flask from [here](https://flask.palletsprojects.com/en/3.0.x/installation/).
+2. Navigate to the ```orchestrate-server``` directory.
+3. Run the following commands:
+```
+pip install -r requirements.txt
+flask run
+```
+4. We recommend using a simple tool such as [Postman](https://web.postman.co/) to send POST requests to the Orchestrate server.
 
 <br>
 
@@ -21,7 +51,7 @@ Individuals aspiring to create music face the challenge of either mastering mult
 
 <br>
 
-### License & User Agreements
+### Licenses & User Agreements
 
 <b>ComMU License </b><br>
 [ComMU GitHub](https://pozalabs.github.io/ComMU/) <br>
