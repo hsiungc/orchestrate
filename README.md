@@ -4,7 +4,7 @@
 
 ## Public-Facing GitHub Repository & Documentation
 
-### Andy Fiegleman, Casey Hsiung, Dakota Postere-Ramos, James Meyer, Ken Trinh
+### Andy Fiegleman, Casey Hsiung, Dakota Potere-Ramos, James Meyer, Ken Trinh
 
 <br>
 
