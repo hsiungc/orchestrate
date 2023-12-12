@@ -2,7 +2,7 @@
 
 # Orchestrate - Capstone Project (Fall 2023)
 
-## Public-Facing GitHub Repository
+## Public-Facing GitHub Repository & Documentation
 
 ### Andy Fiegleman, Casey Hsiung, Dakota Postere-Ramos, James Meyer, Ken Trinh
 
