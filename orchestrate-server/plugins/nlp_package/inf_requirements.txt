@@ -1,0 +1,5 @@
+dotenv
+huggingface_hub
+joblib
+openai
+transformers

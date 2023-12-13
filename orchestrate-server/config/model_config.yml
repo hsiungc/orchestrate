@@ -1,0 +1,311 @@
+# huggingface model name
+MODELS:
+  audio_key: "hsiungc/bert-audio-key"
+  num_measures: "hsiungc/bert-num-measures"
+  bpm: "hsiungc/bert-bpm"
+  time_signature: "gpt-3.5-turbo"
+  genre: "hsiungc/bert-genre"
+  inst: "hsiungc/bert-inst"
+  min_velocity: "hsiungc/bert-min-velocity"
+  max_velocity: "hsiungc/bert-max-velocity"
+  chords: "gpt-3.5-turbo"
+
+# ChatGPT model name
+MODELS_GPT:
+  audio_key: "gpt-3.5-turbo"
+  num_measures: "gpt-3.5-turbo"
+  bpm: "gpt-3.5-turbo"
+  time_signature: "gpt-3.5-turbo"
+  genre: "gpt-3.5-turbo"
+  inst: "gpt-3.5-turbo"
+  min_velocity: "gpt-3.5-turbo"
+  max_velocity: "gpt-3.5-turbo"
+  chords: "gpt-3.5-turbo"
+
+
+# Generative LLM model names
+LLM:
+  {"gpt-3.5-turbo", "gpt-3.5-turbo-1106", "gpt-4", "gpt-4-1106-preview"}
+
+# Number of parallel jobs
+JOBS: 4
+
+# LLM template for prompt context
+TEMPLATE: |
+  'From the prompt below, extract the following information: key signature (audio_key), number of measures (num_measures), 
+  BPM, genre, instrument (inst), time signature (time_signature), minimum velocity (min_velocity), maximum velocity (max_velocity), 
+  and unique chords (chords). Format the output as a JSON with the following types: {"audio_key": string, "num_measures": integer, 
+  "bpm": integer, "genre": string, "inst": string, "time_signature": string, "min_velocity": integer, "max_velocity": integer, 
+  "chords": list}. If the information is unknown or not specified use the default value from the following dictionary: 
+  \n{"key_signature":"C major", "num_measures": 8, "bpm":120, "genre":"rock", "inst":"acoustic_grand_piano", 
+  "time_signature":"4/4", "min_velocity":10, "max_velocity":127}\n\n'
+
+# instrument program mapper for MIDI
+INST_PROGRAM:
+  'acoustic_grand_piano': 1
+  'acoustic_piano': 1
+  'bright_acoustic': 2
+  'electric_grand': 3
+  'honky_tonk_piano': 4
+  'electric_piano_1': 5
+  'electric_piano_2': 6
+  'harpsichord': 7
+  'clav': 8
+  'celesta': 9
+  'glockenspiel': 10
+  'music_box': 11
+  'vibraphone': 12
+  'marimba': 13
+  'xylophone': 14
+  'tubular_bells': 15
+  'dulcimer': 16
+  'drawbar_organ': 17
+  'percussive_organ': 18
+  'rock_organ': 19
+  'church_organ': 20
+  'reed_organ': 21
+  'accoridan': 22
+  'harmonica': 23
+  'tango_accordion': 24
+  'acoustic_guitar_nylon': 25
+  'acoustic_guitar_steel': 26
+  'electric_guitar_jazz': 27
+  'electric_guitar_clean': 28
+  'electric_guitar_muted': 29
+  'overdriven_guitar': 30
+  'distortion_guitar': 31
+  'guitar_harmonics': 32
+  'acoustic_bass': 33
+  'electric_bass_finger': 34
+  'electric_bass_pick': 35
+  'fretless_bass': 36
+  'slap_bass_1': 37
+  'slap_bass_2': 38
+  'synth_bass_1': 39
+  'synth_bass_2': 40
+  'ensemble': 40
+  'string_violin': 41
+  'string_viola': 42
+  'string_cello': 43
+  'violin': 41
+  'viola': 42
+  'cello': 43
+  'contrabass': 44
+  'tremolo_strings': 45
+  'pizzicato_strings': 46
+  'orchestral_strings': 47
+  'timpani': 48
+  'string_ensemble': 49
+  'string_ensemble_1': 49
+  'string_ensemble_2': 50
+  'synthstrings_1': 51
+  'synthstrings_2': 52
+  'choir_aahs': 53
+  'voice_oohs': 54
+  'synth_voice': 55
+  'orchestra_hit': 56
+  'trumpet': 57
+  'trombone': 58
+  'tuba': 59
+  'muted_trumpet': 60
+  'french_horn': 61
+  'brass_section': 62
+  'synthbrass_1': 63
+  'synthbrass_2': 64
+  'soprano_sax': 65
+  'alto_sax': 66
+  'tenor_sax': 67
+  'baritone_sax': 68
+  'oboe': 69
+  'english_horn': 70
+  'bassoon': 71
+  'clarinet': 72
+  'piccolo': 73
+  'flute': 74
+  'recorder': 75
+  'pan_flute': 76
+  'blown_bottle': 77
+  'shakuhachi': 78
+  'whistle': 79
+  'ocarina': 80
+  'lead_1_square': 81
+  'lead_2_sawtooth': 82
+  'lead_3_calliope': 83
+  'lead_4_chiff': 84
+  'lead_5_charang': 85
+  'lead_6_voice': 86
+  'lead_7_fifths': 87
+  'lead_8_bass+lead': 88
+  'pad_1_new_age': 89
+  'pad_2_warm': 90
+  'pad_3_polysynth': 91
+  'pad_4_choir': 92
+  'pad_5_bowed': 93
+  'pad_6_metallic': 94
+  'pad_7_halo': 95
+  'pad_8_sweep': 96
+  'fx_1_rain': 97
+  'fx_2_soundtrack': 98
+  'fx_3_crystal': 99
+  'fx_4_atmosphere': 100
+  'fx_5_brightness': 101
+  'fx_6_goblins': 102
+  'fx_7_echoes': 103
+  'fx_8_sci-fi': 104
+  'sitar': 105
+  'banjo': 106
+  'shamisen': 107
+  'koto': 108
+  'kalimba': 109
+  'bagpipe': 110
+  'fiddle': 111
+  'shanai': 112
+  'tinkle_bell': 113
+  'agogo': 114
+  'steel_drums': 115
+  'woodblock': 116
+  'taiko_drum': 117
+  'melodic_tom': 118
+  'synth_drum': 119
+  'reverse_cymbal': 120
+  'guitar_fret_noise': 121
+  'breath_noise': 122
+  'seashore': 123
+  'bird_tweet': 124
+  'telephone_ring': 125
+  'helicopter': 126
+  'applause': 127
+  'gunshot': 128
+
+
+KEY_CHORDS:
+  "abmajor" : [["Ab", "Eb", "Fm", "Db"],
+                  ["Ab", "Db", "Eb", "Db"],
+                  ["Bbm", "Eb", "Ab"],
+                  ["Ab", "Fm", "Db", "Eb"],
+                  ["Ab", "Gb", "Fb", "Gb"]]
+  "amajor"  : [["A", "E", "F#m", "D"],
+                  ["A", "D", "E", "D"],
+                  ["Bm", "Em", "A"],
+                  ["A", "F#m", "D", "E"],
+                  ["A", "G", "F", "G"]]
+  "aminor"  : [["Am", "E", "F", "D"],
+                  ["Am", "D", "E", "D"],
+                  ["Bm", "E", "Am"],
+                  ["Am", "F", "D", "E"],
+                  ["Am", "G", "F", "G"]]
+  "bbmajor" : [["Bb", "F", "Gm", "Eb"],
+                  ["Bb", "Eb", "F", "Eb"],
+                  ["Cm", "F", "Bb"],
+                  ["Bb", "Gm", "Eb", "F"],
+                  ["Bb", "Ab", "Gb", "Ab"]]
+  "bbminor" : [["Bbm", "F", "Gb", "Eb"],
+                  ["Bbm", "Eb", "F", "Eb"],
+                  ["Cm", "F", "Bbm"],
+                  ["Bbm", "Gb", "Eb", "F"],
+                  ["Bbm", "Ab", "Gb", "Ab"]]
+  "bmajor"  : [["B", "F#", "G#m", "E"],
+                  ["B", "E", "F#", "E"],
+                  ["C#m", "F#", "B"],
+                  ["B", "G#m", "E", "F#"],
+                  ["B", "A", "G", "A"]]
+  "bminor"  : [["Bm", "F#", "G", "E"],
+                  ["Bm", "E", "F#", "E"],
+                  ["C#m", "F#", "Bm"],
+                  ["Bm", "G", "E", "F#"],
+                  ["Bm", "A", "G", "A"]]
+  "cmajor"  : [["C", "G", "Am", "F"],
+                  ["C", "F", "G", "F"],
+                  ["Dm", "G", "C"],
+                  ["C", "Am", "F", "G"],
+                  ["C", "Bb", "Ab", "Bb"]]
+  "cminor"  : [["Cm", "G", "Abm", "F"],
+                  ["Cm", "F", "G", "F"],
+                  ["Dm", "G", "Cm"],
+                  ["Cm", "Abm", "F", "G"],
+                  ["Cm", "Bb", "Abm", "Bb"]]
+  "c#minor" : [["C#m", "G#", "Am", "F#"],
+                  ["C#m", "F#", "G#", "F#"],
+                  ["D#m", "G#", "C#m"],
+                  ["C#m", "Am", "F#", "G#"],
+                  ["C#m", "B", "A", "B"]]
+  "dbmajor" : [["Db", "Ab", "Bbm", "Gb"],
+                  ["Db", "Gb", "Ab", "Gb"],
+                  ["Ebm", "Ab", "Db"],
+                  ["Db", "Bbm", "Gb", "Ab"],
+                  ["Db", "Cb", "A", "Cb"]]
+  "dmajor"  : [["D", "A", "Bm", "G"],
+                  ["D", "G", "A", "G"],
+                  ["Em", "A", "D"],
+                  ["D", "Bm", "G", "A"],
+                  ["D", "C", "Bb", "C"]]
+  "dminor"  : [["Dm", "A", "Bbm", "G"],
+                  ["Dm", "G", "A", "G"],
+                  ["Em", "A", "Dm"],
+                  ["Dm", "Bbm", "G", "A"],
+                  ["Dm", "C", "Bb", "C"]]
+  "d#minor" : [["D#m", "A#", "Bm", "G#"],
+                  ["D#m", "G#", "A#", "G#"],
+                  ["E#m", "A#", "D#m"],
+                  ["D#m", "Bm", "G#", "A"],
+                  ["D#m", "C#", "B", "C#"]]
+  "ebmajor" : [["Eb", "Bb", "Cm", "Ab"],
+                  ["Eb", "Ab", "Bb", "Ab"],
+                  ["Fm", "Bb", "Eb"],
+                  ["Eb", "Cm", "Ab", "Bb"],
+                  ["Eb", "Db", "Cb", "Db"]]
+  "ebminor" : [["Ebm", "Bb", "Cbm", "Ab"],
+                  ["Ebm", "Ab", "Bb", "Ab"],
+                  ["Fm", "Bb", "Ebm"],
+                  ["Ebm", "Cbm", "Ab", "Bb"],
+                  ["Ebm", "Db", "Cb", "Db"]]
+  "emajor"  : [["E", "B", "C#m", "A"],
+                  ["E", "A", "B", "A"],
+                  ["F#m", "B", "E"],
+                  ["E", "C#m", "A", "B"],
+                  ["E", "D", "C", "D"]]
+  "eminor"  : [["Em", "B", "Cm", "A"],
+                  ["Em", "A", "B", "A"],
+                  ["F#m", "B", "Em"],
+                  ["Em", "Cm", "A", "B"],
+                  ["Em", "D", "C", "D"]]
+  "fmajor"  : [["F", "C", "Dm", "Bb"],
+                  ["F", "Bb", "C", "Bb"],
+                  ["Gm", "C", "F"],
+                  ["F", "Dm", "Bb", "C"],
+                  ["F", "Eb", "Db", "Eb"]]
+  "fminor"  : [["Fm", "C", "Dbm", "Bb"],
+                  ["Fm", "Bb", "C", "Bb"],
+                  ["Gm", "C", "Fm"],
+                  ["Fm", "Dbm", "Bb", "C"],
+                  ["Fm", "Eb", "Db", "Eb"]]
+  "f#major" : [["F#", "C#", "D#m", "B"],
+                  ["F#", "B", "C#", "B"],
+                  ["G#m", "C#", "F#"],
+                  ["F#", "D#m", "B", "C#"],
+                  ["F#", "E", "D", "E"]]
+  "f#minor" : [["F#m", "C#", "Dm", "B"],
+                  ["F#m", "B", "C#", "B"],
+                  ["G#m", "C#", "F#m"],
+                  ["F#m", "Dm", "B", "C#"],
+                  ["F#m", "E", "D", "E"]]
+  "gbmajor" : [["Gb", "Db", "Ebm", "Cb"],
+                  ["Gb", "Cb", "Db", "Cb"],
+                  ["Abm", "Db", "Gb"],
+                  ["Gb", "Ebm", "Cb", "Db"],
+                  ["Gb", "Fb", "D", "Fb"]]
+  "gmajor"  : [["G", "D", "Em", "C"],
+                  ["G", "C", "D", "C"],
+                  ["Am", "D", "G"],
+                  ["G", "Em", "C", "D"],
+                  ["G", "F", "Eb", "F"]]
+  "gminor"  : [["Gm", "D", "Ebm", "C"],
+                  ["Gm", "C", "D", "C"],
+                  ["Am", "D", "Gm"],
+                  ["Gm", "Ebm", "C", "D"],
+                  ["Gm", "F", "Eb", "F"]]
+  "g#minor"  : [["G#m", "D#", "Em", "C#"],
+                  ["G#m", "C#", "D#", "C#"],
+                  ["A#m", "D#", "G#m"],
+                  ["G#m", "Em", "C#", "D#"],
+                  ["G#m", "F#", "E", "F#"]]

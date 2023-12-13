@@ -1,0 +1,136 @@
+table {
+    border-collapse:separate;
+    border-radius: 10px;
+    width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #808080;
+  color: white;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Video formatting */
+
+/* .video-item {
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer;
+    padding: 3% 3%;
+}
+
+.video-item.item img {
+    max-width: 200px;
+    max-height: 250px ;
+} */ 
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Montserrat-light', sans-serif;
+  color: #8f8f8f;
+  font-size: 1.0rem;
+}
+
+/* Heading section */
+.big-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+.container-fluid-small {
+  padding: 0% 10%;
+}
+
+/* Sections */
+.color-section {
+  background-color: #CCC8AA;
+  color: #F1EFEF;
+}
+
+.white-section {
+  background-color: #F1EFEF;
+  color: #CCC8AA;
+}
+
+/** Piano CSS **/
+.piano {
+  display: flex;
+  justify-content: center;
+}
+
+.key {
+  width: 60px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.key.active {
+  background-color: black;
+  color: white;
+}
+
+/* Add styles for sharp/flat keys */
+.key.sharp {
+  width: 40px;
+  height: 140px;
+  position: absolute;
+  margin-left: -20px;
+  background-color: black;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.key.sharp.active {
+  background-color: #222;
+  color: white;
+}
+
+/** Synthesia CSS **/
+.synthesia-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
